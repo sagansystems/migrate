@@ -1,5 +1,5 @@
 FROM --platform=$BUILDPLATFORM tonistiigi/xx:1.4.0 AS cross-compile
-FROM --platform=$BUILDPLATFORM golang:1.22-alpine AS build
+FROM --platform=$BUILDPLATFORM golang:1.26-alpine AS build
 
 RUN apk add --update clang lld
 ARG TARGETOS
